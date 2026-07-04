@@ -1,0 +1,62 @@
+{
+  "name": "n8n-nodes-analytics",
+  "version": "1.0.0",
+  "description": "Powerful n8n community node for execution analytics, AI token tracking, cost estimation, and workflow analysis. Replaces complex 10-20 node analytics workflows with a single reusable node.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "analytics",
+    "execution",
+    "ai",
+    "tokens",
+    "cost",
+    "workflow",
+    "openai",
+    "anthropic",
+    "langchain"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "n8n-nodes-analytics"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n8n-nodes-analytics/n8n-nodes-analytics.git"
+  },
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/Analytics/Analytics.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/N8nApi.credentials.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "gulp": "^4.0.2",
+    "jest": "^29.7.0",
+    "n8n-core": "*",
+    "n8n-workflow": "*",
+    "ts-jest": "^29.1.4",
+    "typescript": "~5.4.5"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
