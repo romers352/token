@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Powerful n8n community node for execution analytics, AI token tracking, cost estimation, and workflow analysis. Replaces complex 10-20 node analytics workflows with a single reusable node.",
   "keywords": [
     "n8n-community-node-package",
